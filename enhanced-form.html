@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Content and Form</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Content Display</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lists</h2>
+            <!-- unordered list -->
+            <h3>Favorite F1 drivers</h3>
+            <ul>
+                <li>Lewis Hamilton</li>
+                <li>Oscar Piastri</li>
+                <li>Sebastian Vettel</li>
+            </ul>
+
+            <h3>Top 3 movies </h3>
+            <!-- ordered list -->
+            <ol>
+                <li>Cars (Pixar)</li>
+                <li>The Old Guard</li>
+                <li>Percy Jackson and the Lightning Thief</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tables</h2>
+            <h3>PLP Assignments</h3>
+            <!-- borders to make the tables look organized -->
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th>Assignment Name</th>
+                        <th>Web Dev 2.0</th>
+                        <th>SEE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Derrick</td>
+                        <td>Done</td>
+                        <td>Halfway</td>
+                    </tr>
+                    <tr>
+                        <td>Jackie</td>
+                        <td>Completed</td>
+                        <td>Not started</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Best of media content</h2>
+            <h3>Image</h3>
+            <img src="docs/athena.webp.jpeg" alt="A car poster" width="300">
+
+            <h3>My notification sound</h3>
+            <audio controls>
+                <source src="docs/f1 notification.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Best F1 Edit </h3>
+            <video width="500" controls>
+                <source src="docs/bestedit.mp4" type="video/mp4">
+                Your browser does not support the video format.
+            </video>
+        </section>
+
+        <!-- Details form -->
+        <section>
+            <h2>HTML5 Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Derrick ..." required minlength="3">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Details</legend>
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+
+                    <label for="quantity">No. of Siblings :</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="10">
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                     <option value="">--Select Country--</option>
+                       <option value="Kenya">Kenya</option>
+                        <option value="Uganda">Uganda</option>
+                         <option value="Tanzania">Tanzania</option>
+                    </select>
+
+                    <label for="department">Cohort:</label>
+                    <select id="department" name="department">
+                        <option value="sales">Jan-April</option>
+                        <option value="marketing">May-August</option>
+                        <option value="engineering" selected>Sep-Dec</option>
+                    </select>
+
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <p>Interests:</p>
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label><br>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label><br>
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" placeholder="any comments?" name="comments" rows="4" maxlength="200"></textarea>
+
+                    <label for="readonly-field">Read-only:</label>
+                     <input type="text" id="student-id" name="student-id" value="PLP-2025" readonly>
+
+                </fieldset>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Derrick @PLP 2025</p>
+    </footer>
+
+</body>
+</html>
